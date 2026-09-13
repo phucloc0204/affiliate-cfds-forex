@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halumoni - Hệ Sinh Thái Giao Dịch & Quản Trị Vốn Thực Chiến (Bản Sáng)</title>
+  <meta name="description" content="Halumoni - Nền tảng chia sẻ giải pháp giao dịch Forex, Vàng, CFD: Cung cấp Bot EA tài khoản Cent an toàn, Copy Trade chuyên gia và hoàn phí Backcom trọn đời.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #D97706 0%, #EA580C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-glow-light {
+      background: radial-gradient(circle at 50% 10%, rgba(251, 191, 36, 0.15), transparent 70%);
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] text-slate-700 font-sans antialiased selection:bg-amber-500 selection:text-black">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-white/90 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Halumoni Logo" class="h-10 sm:h-12 w-auto object-contain hover:opacity-90 transition-opacity">
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#brokers" class="hover:text-amber-600 transition-colors">Sàn Đối Tác</a>
+        <a href="#ea-bot" class="hover:text-amber-600 transition-colors">EA Bot Cent</a>
+        <a href="#copy-trade" class="hover:text-amber-600 transition-colors">Copy Trade</a>
+        <a href="#backcom" class="hover:text-amber-600 transition-colors">Hoàn Phí (Backcom)</a>
+        <a href="#faq" class="hover:text-amber-600 transition-colors">Hỏi Đáp</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://zalo.me/g/lmqwcx788" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-bold text-sm shadow-lg shadow-amber-500/25 transition-all transform hover:-translate-y-0.5">
+          <i class="fa-solid fa-comments"></i>
+          <span>Vào Nhóm Zalo VIP</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden hero-glow-light">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-semibold mb-6 shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+        Hệ sinh thái hỗ trợ Trader thực chiến 2026
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight sm:leading-tight">
+        Giao Dịch Kỷ Luật, <br class="hidden sm:inline">
+        Tối Ưu Phí & <span class="gold-gradient-text">Tự Động Hóa Dòng Tiền</span>
+      </h1>
+
+      <p class="mt-6 text-base sm:text-xl text-slate-600 max-w-3xl mx-auto font-normal leading-relaxed">
+        Đừng đua lệnh bằng cảm xúc để rồi chịu rủi ro lớn. Chúng tôi trang bị cho bạn giải pháp <span class="text-slate-900 font-semibold">EA Bot tài khoản Cent an toàn</span>, <span class="text-slate-900 font-semibold">Copy Trade chuyên gia</span> và cơ chế <span class="text-slate-900 font-semibold">hoàn phí trọn đời (Backcom 30% - 50%)</span>.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://zalo.me/g/lmqwcx788" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-bold text-base shadow-xl shadow-amber-500/30 transition-all transform hover:-translate-y-0.5">
+          <i class="fa-solid fa-users text-lg"></i>
+          <span>Tham Gia Cộng Đồng Zalo (Miễn Phí)</span>
+        </a>
+        <a href="#brokers" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-semibold text-base shadow-sm transition-all">
+          <i class="fa-solid fa-arrow-down text-amber-600"></i>
+          <span>Xem 2 Sàn Khuyến Nghị</span>
+        </a>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 pt-10 border-t border-slate-200 text-left">
+        <div class="p-4 rounded-xl bg-white border border-slate-200/80 shadow-sm">
+          <div class="text-amber-600 font-extrabold text-2xl">100%</div>
+          <div class="text-xs text-slate-500 font-medium mt-1">Miễn phí công cụ & tư vấn</div>
+        </div>
+        <div class="p-4 rounded-xl bg-white border border-slate-200/80 shadow-sm">
+          <div class="text-amber-600 font-extrabold text-2xl">$10+</div>
+          <div class="text-xs text-slate-500 font-medium mt-1">Bắt đầu an toàn với tk Cent</div>
+        </div>
+        <div class="p-4 rounded-xl bg-white border border-slate-200/80 shadow-sm">
+          <div class="text-amber-600 font-extrabold text-2xl">3 - 5 Phút</div>
+          <div class="text-xs text-slate-500 font-medium mt-1">Nạp rút QR nội địa 24/7</div>
+        </div>
+        <div class="p-4 rounded-xl bg-white border border-slate-200/80 shadow-sm">
+          <div class="text-amber-600 font-extrabold text-2xl">50%</div>
+          <div class="text-xs text-slate-500 font-medium mt-1">Hoàn phí Backcom tự động</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2 SÀN ĐỐI TÁC (BROKERS) ================= -->
+  <section id="brokers" class="py-16 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs uppercase tracking-widest text-amber-600 font-bold">Lựa Chọn Uy Tín</h2>
+        <p class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2">2 Sàn Giao Dịch Hàng Đầu 2026</p>
+        <p class="text-slate-500 mt-3 text-sm sm:text-base">Mở tài khoản theo liên kết chính thức để nhận trọn bộ công cụ Bot Cent và quyền lợi Hoàn Phí độc quyền.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        
+        <!-- EXNESS CARD -->
+        <div class="relative bg-white border-2 border-amber-400 rounded-2xl p-6 sm:p-8 shadow-xl shadow-amber-500/5 flex flex-col justify-between">
+          <div class="absolute -top-3.5 right-6 px-3.5 py-1 rounded-full bg-amber-500 text-white text-xs font-bold tracking-wide uppercase shadow-sm">
+            Khuyến Nghị #1 Cho Newbie
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div>
+                <h3 class="text-2xl font-bold text-slate-900">Exness</h3>
+                <span class="text-xs text-slate-500 font-medium">Giấy phép FCA & CySEC toàn cầu</span>
+              </div>
+              <div class="px-3 py-1.5 rounded-lg bg-amber-50 border border-amber-200 text-amber-800 text-xs font-mono font-bold">
+                Mã: ir0nvk2lbc
+              </div>
+            </div>
+
+            <ul class="space-y-3.5 text-sm text-slate-600 mb-8">
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-amber-500 mt-1"></i>
+                <span><strong>Nạp rút tức thì 24/7</strong> qua Internet Banking / VietQR nội địa (kể cả đêm T7, CN).</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-amber-500 mt-1"></i>
+                <span><strong>Tài khoản Cent từ 1 USD:</strong> Vốn 10$ = 1.000 Cent, cực kỳ phù hợp luyện tay nghề và cắm Bot EA.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-amber-500 mt-1"></i>
+                <span><strong>Spread Vàng siêu thấp:</strong> Miễn phí phí qua đêm (Swap-free) cho nhiều mã chính.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-amber-500 mt-1"></i>
+                <span><strong>Hỗ trợ Backcom tự động:</strong> Hoàn trả một phần phí vào ví hàng ngày.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <a href="https://one.exnessonelink.com/a/ir0nvk2lbc" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm shadow-md shadow-amber-500/20 transition-all">
+              <span>Đăng Ký Tài Khoản Exness</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+            <p class="text-center text-[12px] text-slate-500 mt-2">Đăng ký trên App: Điền mã <span class="text-amber-700 font-mono font-bold">ir0nvk2lbc</span></p>
+          </div>
+        </div>
+
+        <!-- VANTAGE CARD -->
+        <div class="bg-white border border-slate-200 hover:border-blue-400 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-xl flex flex-col justify-between transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div>
+                <h3 class="text-2xl font-bold text-slate-900">Vantage Markets</h3>
+                <span class="text-xs text-slate-500 font-medium">Giấy phép ASIC & FCA uy tín</span>
+              </div>
+              <div class="px-3 py-1.5 rounded-lg bg-blue-50 border border-blue-200 text-blue-800 text-xs font-mono font-bold">
+                Mã: 1c6NlWSX
+              </div>
+            </div>
+
+            <ul class="space-y-3.5 text-sm text-slate-600 mb-8">
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-blue-600 mt-1"></i>
+                <span><strong>Khớp lệnh chuẩn ECN:</strong> Tốc độ xử lý lệnh cấp mili-giây, không trượt giá.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-blue-600 mt-1"></i>
+                <span><strong>Đa dạng sản phẩm CFD:</strong> Vàng, Dầu, Chỉ số chứng khoán Mỹ (US30, NAS100), Tiền tệ.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-blue-600 mt-1"></i>
+                <span><strong>Hỗ trợ Copy Trading mạnh mẽ:</strong> Dễ dàng kết nối với các Master Trader quốc tế.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check text-blue-600 mt-1"></i>
+                <span><strong>Cung cấp VPS miễn phí</strong> cho tài khoản duy trì giao dịch ổn định.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <a href="https://vigco.co/la-com-inv/vi/1c6NlWSX" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md shadow-blue-600/20 transition-all">
+              <span>Đăng Ký Tài Khoản Vantage</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+            <p class="text-center text-[12px] text-slate-500 mt-2">Đăng ký trên App: Điền mã <span class="text-blue-700 font-mono font-bold">1c6NlWSX</span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VŨ KHÍ 1: EA BOT CENT ================= -->
+  <section id="ea-bot" class="py-16 md:py-24 bg-[#F8FAFC]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-100 text-amber-800 text-xs font-bold">
+            <i class="fa-solid fa-robot"></i> Giải Pháp Tự Động Hóa
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 leading-snug">
+            EA Bot Trên Tài Khoản Cent: <br>
+            <span class="gold-gradient-text">Lời Giải Cho Bài Toán Sống Sót</span>
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Nguyên nhân 90% người mới mất tiền là do <strong>cảm xúc chi phối</strong>: fomo đu đỉnh, gồng lỗ không giới hạn và all-in tài khoản. Robot EA sinh ra để giải quyết triệt để rào cản tâm lý này.
+          </p>
+
+          <div class="space-y-4">
+            <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm flex gap-4">
+              <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 border border-amber-200">
+                <i class="fa-solid fa-shield-halved text-lg"></i>
+              </div>
+              <div>
+                <h4 class="text-slate-900 font-bold text-sm">Vốn Nhỏ - Sức Chịu Đựng Lớn</h4>
+                <p class="text-slate-600 text-xs mt-1">Nạp $50 = 5.000 USC (Cent). Bot đánh lệnh 0.01 lot cent, tài khoản chịu được các đợt sóng dao động hàng nghìn pip mà không sợ thanh lý.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm flex gap-4">
+              <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 border border-amber-200">
+                <i class="fa-solid fa-clock-rotate-left text-lg"></i>
+              </div>
+              <div>
+                <h4 class="text-slate-900 font-bold text-sm">Giao Dịch 24/5 Hoàn Toàn Tự Động</h4>
+                <p class="text-slate-600 text-xs mt-1">Bạn không cần canh biểu đồ mỏi mắt cả đêm. Bot tự nhận diện vùng kháng cự/hỗ trợ để vào và chốt lệnh kỷ luật.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://zalo.me/g/lmqwcx788" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold text-sm hover:opacity-95 shadow-md shadow-amber-500/20 transition-all">
+              <i class="fa-brands fa-telegram text-base"></i>
+              <span>Nhận Bộ File Cài Bot EA Miễn Phí</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xl relative">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-6">
+              <span class="text-xs font-mono text-slate-500 font-semibold">STATUS: ACTIVE 24/5</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold">Tài khoản Cent An Toàn</span>
+            </div>
+
+            <div class="space-y-4 font-mono text-xs">
+              <div class="flex justify-between p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+                <span class="text-slate-500 font-sans">Vốn thực nạp:</span>
+                <span class="text-slate-900 font-bold">$50 USD (= 5,000 USC)</span>
+              </div>
+              <div class="flex justify-between p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+                <span class="text-slate-500 font-sans">Khối lượng lệnh:</span>
+                <span class="text-amber-600 font-bold">0.01 - 0.02 Cent Lot</span>
+              </div>
+              <div class="flex justify-between p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+                <span class="text-slate-500 font-sans">Drawdown tối đa:</span>
+                <span class="text-emerald-600 font-bold">&lt; 8.5%</span>
+              </div>
+              <div class="flex justify-between p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+                <span class="text-slate-500 font-sans">Chiến lược:</span>
+                <span class="text-slate-900 font-semibold">Smart Scalp & Grid Vùng Giá</span>
+              </div>
+            </div>
+
+            <div class="mt-6 p-4 rounded-xl bg-amber-50/80 border border-amber-200 text-xs text-amber-900 font-medium">
+              <i class="fa-solid fa-lightbulb text-amber-600 mr-1"></i> Tặng kèm file Preset an toàn & video hướng dẫn cắm bot lên VPS trong 10 phút.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VŨ KHÍ 2: COPY TRADE ================= -->
+  <section id="copy-trade" class="py-16 md:py-24 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-50 text-blue-700 text-xs font-bold mb-3 border border-blue-200">
+          <i class="fa-solid fa-copy"></i> Dành Cho Người Bận Rộn
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900">Copy Trade Theo Chuyên Gia</h2>
+        <p class="text-slate-600 mt-3 text-sm sm:text-base">Không cần phân tích kỹ thuật phức tạp. Tài khoản của bạn sẽ tự động đồng bộ theo lệnh của chuyên gia có lịch sử giao dịch minh bạch.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="p-6 rounded-2xl bg-[#F8FAFC] border border-slate-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl font-bold mb-5">
+            01
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Minh Bạch Lịch Sử</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Mọi lệnh mua bán, tỷ lệ thắng, mức sụt giảm (Drawdown) đều được sàn kiểm chứng công khai theo thời gian thực.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#F8FAFC] border border-slate-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl font-bold mb-5">
+            02
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Toàn Quyền Quản Lý Vốn</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Tiền vẫn nằm trong tài khoản của bạn tại sàn. Bạn có thể ngắt kết nối copy hoặc rút tiền về tài khoản ngân hàng bất kỳ lúc nào.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#F8FAFC] border border-slate-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl font-bold mb-5">
+            03
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Không Mất Phí Bản Quyền</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Chỉ trả phần trăm chia sẻ khi chuyên gia giúp bạn có lợi nhuận dương. Không có lãi = Không tốn phí.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="https://zalo.me/g/lmqwcx788" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md shadow-blue-600/20 transition-all">
+          <i class="fa-solid fa-list-check"></i>
+          <span>Vào Nhóm Xem Danh Mục Copy Trade Hiện Tại</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOÀN PHÍ (BACKCOM) ================= -->
+  <section id="backcom" class="py-16 bg-[#F8FAFC]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="p-8 sm:p-10 rounded-2xl bg-white border border-amber-200 shadow-md text-center sm:text-left flex flex-col sm:flex-row items-center gap-8">
+        <div class="w-20 h-20 rounded-2xl bg-amber-500/10 text-amber-600 flex items-center justify-center text-3xl shrink-0 border border-amber-200">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+        </div>
+        <div class="space-y-3">
+          <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Chính Sách Hoàn Phí Giao Dịch (Backcom 30% - 50%)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Khi bạn giao dịch, sàn luôn thu một khoản phí chênh lệch (Spread). Chúng tôi cam kết <strong>hoàn trả lại 30% đến 50% tiền hoa hồng</strong> đó thẳng vào tài khoản của bạn mỗi ngày. Bạn vừa tiết kiệm tối đa chi phí, vừa gia tăng lợi nhuận ròng.
+          </p>
+          <div class="pt-2">
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700">
+              <i class="fa-solid fa-check text-amber-600"></i> Áp dụng tự động cho tài khoản đăng ký qua link đối tác
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section id="faq" class="py-16 md:py-20 bg-white border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Câu Hỏi Thường Gặp (FAQ)</h2>
+        <p class="text-slate-500 text-sm mt-2">Những thắc mắc phổ biến của người mới bắt đầu</p>
+      </div>
+
+      <div class="space-y-4 text-sm">
+        <details class="group p-5 rounded-xl bg-[#F8FAFC] border border-slate-200 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm">
+          <summary class="flex items-center justify-between font-bold text-slate-900">
+            <span>Tôi là người mới hoàn toàn, chưa biết gì có tham gia được không?</span>
+            <span class="transition group-open:rotate-180 text-amber-600"><i class="fa-solid fa-chevron-down"></i></span>
+          </summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            Hoàn toàn được! Chúng tôi có bộ tài liệu Ebook hướng dẫn căn bản, và khuyến nghị bạn bắt đầu với tài khoản Cent vốn chỉ từ 10$ – 20$ để làm quen phần mềm mà không phải chịu áp lực tài chính.
+          </p>
+        </details>
+
+        <details class="group p-5 rounded-xl bg-[#F8FAFC] border border-slate-200 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm">
+          <summary class="flex items-center justify-between font-bold text-slate-900">
+            <span>Tôi có bị mất phí khi tham gia nhóm Zalo hay nhận Bot EA không?</span>
+            <span class="transition group-open:rotate-180 text-amber-600"><i class="fa-solid fa-chevron-down"></i></span>
+          </summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            Không. Toàn bộ công cụ Bot Cent, tín hiệu tham khảo và hỗ trợ kỹ thuật 1:1 đều <strong>miễn phí 100%</strong> cho các thành viên mở tài khoản giao dịch dưới liên kết đối tác của chúng tôi.
+          </p>
+        </details>
+
+        <details class="group p-5 rounded-xl bg-[#F8FAFC] border border-slate-200 [&_summary::-webkit-details-marker]:hidden cursor-pointer shadow-sm">
+          <summary class="flex items-center justify-between font-bold text-slate-900">
+            <span>Tôi đã có tài khoản Exness từ trước, có đổi mã đối tác được không?</span>
+            <span class="transition group-open:rotate-180 text-amber-600"><i class="fa-solid fa-chevron-down"></i></span>
+          </summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">
+            Được nhé! Bạn chỉ cần vào phần Live Chat hỗ trợ của Exness trên web hoặc app, nhắn yêu cầu: <em>"Tôi muốn chuyển đối tác sang mã <strong class="text-amber-700 font-mono font-bold">ir0nvk2lbc</strong>"</em> là hệ thống sẽ cập nhật trong 24h.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DISCLAIMER & FOOTER ================= -->
+  <footer class="bg-slate-50 border-t border-slate-200 py-12 text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 space-y-6">
+      <!-- Risk Warning -->
+      <div class="p-4 rounded-xl bg-amber-50/80 border border-amber-200/90 leading-relaxed text-slate-700 shadow-sm">
+        <strong class="text-amber-800 uppercase tracking-wide">⚠️ Cảnh Báo Rủi Ro (Risk Warning):</strong> 
+        Giao dịch ngoại hối (Forex) và các hợp đồng chênh lệch (CFD) sử dụng đòn bẩy tài chính tiềm ẩn mức độ rủi ro cao đối với nguồn vốn của bạn và có thể dẫn đến việc thua lỗ một phần hoặc toàn bộ vốn đầu tư. Bạn không nên đầu tư số tiền mà bạn không thể chấp nhận mất. Mọi thông tin, bot tự động và tín hiệu chia sẻ trên trang web này chỉ mang tính chất giáo dục, tham khảo và không được coi là lời khuyên đầu tư tài chính trực tiếp.
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-200 text-center sm:text-left">
+        <div>
+          <img src="images/logo.png" alt="Halumoni Logo" class="h-9 sm:h-10 w-auto object-contain mb-2.5">
+          <p class="text-slate-800 font-bold">Halumoni © 2026. All Rights Reserved.</p>
+          <p class="text-[11px] text-slate-500 mt-0.5">Xây dựng giải pháp giao dịch bền vững & hỗ trợ cộng đồng.</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="https://zalo.me/g/lmqwcx788" target="_blank" rel="noopener" class="text-slate-600 hover:text-amber-600 font-semibold transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-comments text-amber-500"></i> Zalo VIP
+          </a>
+          <a href="#brokers" class="text-slate-600 hover:text-amber-600 font-semibold transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-link text-amber-500"></i> Link Sàn
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
